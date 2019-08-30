@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function ($) {
 
 	$('#login-switch').click(function(){
 		$('#login').fadeOut(500).promise().done(function(){

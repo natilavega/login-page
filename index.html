@@ -4,63 +4,61 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Inicio Sesion</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="container">
+	<!-- Login -->
+	<form id="login">
+		<div class="row row-input">
+			<label class="icon"><img src="img/icon-mail.png"></label>
+			<input class="input" id="email" type="text" name="email" placeholder="Correo electrónico" autofocus>
+		</div>
+		<div class="row row-input">
+			<label for="password" class="icon"><img src="img/icon-lock.png"></label>
+			<input class="input" id="password" type="password" name="password" placeholder="Contraseña">
+		</div>
+		<div class="row row-text">
+			<p id="restore-password" class="pointer">¿Olvidaste tu contraseña?</p>
+		</div>
+		<input type="submit" name="submit" value="Iniciar Sesión" class="submit">
+		<div class="row row-text">
+			<p id="login-switch" class="pointer">¿No tienes cuenta? <b>Regístrate</b></p>
+		</div>
+	</form>
 
-		<!-- Login -->
-		<form id="login">
-			<div class="row row-input">
-				<label for="email" class="icon"><img src="https://cdn4.iconfinder.com/data/icons/web-ui-color/128/Mail-512.png"></label>
-				<input class="input" id="email" type="text" name="email" placeholder="Correo electrónico" autofocus>
-			</div>
-			<div class="row row-input">
-				<label for="password" class="icon"><img src="https://cdn4.iconfinder.com/data/icons/web-ui-color/128/Lock-512.png"></label>
-				<input class="input" id="password" type="password" name="password" placeholder="Contraseña">
-			</div>
-			<div class="row row-text">
-				<input type="checkbox" name="remember" checked>Recordar mis datos <br>
-				<p id="restore-password" class="pointer">¿Olvidaste tu contraseña?</p>
-			</div>
-			<input type="submit" name="submit" value="Iniciar sesión" class="submit">
-			<div class="row row-text">
-				<p id="login-switch" class="pointer">¿No tienes cuenta? Regístrate ahora</p>
-			</div>
-		</form>
+	<!-- Sign Up -->
+	<form id="signup" class="hide">
+		<div class="row row-input">
+			<label for="username" class="icon"><img src="img/icon-user.png"></label>
+			<input class="input" id="username" type="text" name="username" placeholder="Nombre de usuario" autofocus>
+		</div>
+		<div class="row row-input">
+			<label for="email" class="icon"><img src="img/icon-mail.png"></label>
+			<input class="input" id="email" type="text" name="email" placeholder="Correo electrónico">
+		</div>
+		<div class="row row-input">
+			<label for="password" class="icon"><img src="img/icon-lock.png"></label>
+			<input class="input" id="password" type="password" name="password" placeholder="Contraseña">
+		</div>
+		<input type="submit" name="submit" value="Registrarte" class="submit">
+		<div class="row row-text">
+			<p id="signup-switch" class="pointer">¿Ya tienes cuenta? <b>Inicia sesión</b></p>
+		</div>
+	</form>
 
-		<!-- Sign Up -->
-		<form id="signup" class="hide">
-			<div class="row row-input">
-				<label for="username" class="icon"><img src="http://chittagongit.com//images/user-profile-icon/user-profile-icon-10.jpg"></label>
-				<input class="input" id="username" type="text" name="username" placeholder="Nombre de usuario" autofocus>
-			</div>
-			<div class="row row-input">
-				<label for="email" class="icon"><img src="https://cdn4.iconfinder.com/data/icons/web-ui-color/128/Mail-512.png"></label>
-				<input class="input" id="email" type="text" name="email" placeholder="Correo electrónico">
-			</div>
-			<div class="row row-input">
-				<label for="password" class="icon"><img src="https://cdn4.iconfinder.com/data/icons/web-ui-color/128/Lock-512.png"></label>
-				<input class="input" id="password" type="password" name="password" placeholder="Contraseña">
-			</div>
-			<input type="submit" name="submit" value="Registrarte" class="submit">
-			<div class="row row-text">
-				<p id="signup-switch" class="pointer">¿Ya tienes cuenta? Inicia sesión</p>
-			</div>
-		</form>
+	<!-- Restore password -->
+	<form id="restore" class="hide">
+		<div class="row row-text">
+			<p>Encuentra tu cuenta</p>
+		</div>
+		<div class="row row-input">
+			<label for="email" class="icon"><img src="img/icon-mail.png"></label>
+			<input class="input" id="email" type="text" name="email" placeholder="Correo electrónico" autofocus>
+		</div>
+		<input type="submit" name="submit" value="Buscar" class="submit">
+	</form>
 
-		<!-- Restore password -->
-		<form id="restore" class="hide">
-			<div class="row row-text">
-				<p>Encuentra tu cuenta</p>
-			</div>
-			<div class="row row-input">
-				<label for="email" class="icon"><img src="https://cdn4.iconfinder.com/data/icons/web-ui-color/128/Mail-512.png"></label>
-				<input class="input" id="email" type="text" name="email" placeholder="Correo electrónico" autofocus>
-			</div>
-			<input type="submit" name="submit" value="Buscar" class="submit">
-		</form>
-	</div>
 
 	<!-- Script -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
